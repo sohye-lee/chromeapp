@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    background-color: black;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.clicked {
+     color: gray;
+}
+
+.showing {
+    display: block!important;
+}
+
+.form,
+.greetings {
+    display: none;
+}
