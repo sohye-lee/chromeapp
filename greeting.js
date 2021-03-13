@@ -1,4 +1,4 @@
-const form = document.querySelector('.form');
+const form = document.querySelector('.form__greeting');
 const input = form.querySelector('.form__input');
 const greeting = document.querySelector(".greeting")
 
@@ -25,7 +25,12 @@ function askName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello, ${text}`;
+    const hour = new Date().getHours();
+    const hello = hour >= 18 
+        ? 'Good evening' 
+        : hour >= 12 ? 'Good afternoon' 
+        : 'Good morning';
+    greeting.innerText =  `${hello}, ${text}!`;
 }
 
 function loadName() {

@@ -7,14 +7,14 @@
 body {
     width: 100vw;
     height: 100vh;
-
+    color: white;
+    background-color: black;
 }
 
 .heading {
     display: flex;
     justify-content: space-between;
     height: 5%;
-    background-color: black;
 }
 
 .content {
@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 h1 {
@@ -44,7 +44,27 @@ input {
     display: block!important;
 }
 
-.form,
+.form__greeting,
 .greetings {
     display: none;
+}
+
+.bg__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: opacity(.8) brightness(80%);
+    animation: fadeIn 600ms linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
