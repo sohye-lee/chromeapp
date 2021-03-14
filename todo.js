@@ -40,7 +40,6 @@ function paintToDo(text) {
     saveToDos();
 }
 
-
 function handleToDoSubmit(e) {
     e.preventDefault();
     const currentValue = inputTodo.value;
